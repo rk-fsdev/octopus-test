@@ -1,0 +1,34 @@
+.piechart {
+  display: flex;
+  flex-direction: row;
+
+  &_desc {
+    width: 100%;
+    .title {
+      font-weight: 200;
+    }
+    .rect {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+    .labelsets {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      max-width: 250px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      .category {
+        display: flex;
+        align-items: center;
+      }
+    }
+    h4 {
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+}

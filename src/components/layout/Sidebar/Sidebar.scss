@@ -1,0 +1,23 @@
+.sidebar {
+  position: fixed;
+  width: var(--sidebar-width);
+  height: 100vh;
+  top: var(--navbar-height);
+  left: auto;
+  transition: all 0.1s;
+  overflow: hidden;
+  z-index: 9;
+  ul {
+    padding-top: 20px;
+    list-style: none;
+  }
+
+  .active {
+    background: lightcyan;
+    color: lightseagreen;
+  }
+}
+
+.collapsed {
+  width: var(--sidebar-collapsed-width);
+}

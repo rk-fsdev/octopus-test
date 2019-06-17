@@ -1,0 +1,27 @@
+.sub-dropdown {
+  padding-left: 10px;
+  padding-right: 10px;
+  h4 {
+    margin-bottom: 0px;
+    font-weight: 300;
+  }
+  .ui.selection.dropdown {
+    padding-left: 0px;
+    padding-top: 0px;
+    border: none;
+    min-height: 0px;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    .menu {
+      z-index: 9;
+      .item {
+        font-size: inherit;
+      }
+    }
+    i {
+      padding: 0px !important;
+      right: 20px !important;
+    }
+  }
+}

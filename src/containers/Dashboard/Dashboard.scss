@@ -1,0 +1,172 @@
+.dashboard {
+  position: absolute;
+  top: var(--navbar-height);
+  left: auto;
+  transition: all 0.2s;
+  padding-left: var(--sidebar-width);
+  padding-top: 30px;
+  padding-right: 20px;
+  z-index: 1;
+
+  .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    &_dropdown {
+      .dropdown {
+        min-width: 0px;
+        border: none;
+        font-size: 20px;
+        box-shadow: none !important;
+        .menu {
+          .item {
+            font-size: inherit;
+          }
+        }
+      }
+    }
+    &_func {
+      display: flex;
+      .ui.button {
+        border-radius: 50%;
+        font-size: var(--navbar-icon-size);
+        background: white;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 46px;
+      }
+      .ui.button:hover {
+        background: lightgray;
+      }
+      .ui.button:active {
+        background: rgb(199, 199, 199);
+      }
+    }
+  }
+
+  .charts {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .piechart {
+      width: 33%;
+    }
+  }
+
+  .content {
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 12px;
+      &-left {
+        .dropdown {
+          margin-right: 10px;
+          .menu {
+            .item {
+              font-size: inherit;
+            }
+          }
+        }
+        button {
+          font-size: inherit;
+          background-color: white;
+          color: black;
+          font-weight: 300;
+          border: 1px solid lightgrey;
+        }
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+
+        font-size: 12px;
+        h5 {
+          margin: 0;
+          font-size: inherit;
+          padding-right: 20px;
+        }
+        button {
+          font-size: 17px;
+          background-color: white;
+        }
+      }
+    }
+
+    &_table {
+      table {
+        width: 100%;
+      }
+      thead th {
+        background-color: white;
+        font-weight: 300;
+      }
+      thead th:hover {
+        cursor: pointer;
+        background-color: rgb(242, 242, 242);
+      }
+      .tableheader {
+        background-color: white;
+        i {
+          pointer-events: none;
+          height: 100%;
+          transition: all 0.2s;
+        }
+        &_checkbox {
+          width: 5%;
+          text-align: center;
+        }
+        &_vmname {
+          width: 15%;
+        }
+        &_host {
+          width: 10%;
+        }
+        &_ip {
+          width: 10%;
+        }
+        &_os {
+          width: 15%;
+        }
+        &_vcpu {
+          width: 8%;
+        }
+        &_memcap {
+          width: 15%;
+        }
+        &_license {
+          width: 15%;
+        }
+        &_status {
+          width: 7%;
+        }
+      }
+
+      .tablebody {
+        overflow: auto;
+        &_checkbox {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.expanded {
+  padding-left: var(--sidebar-collapsed-width);
+}
+
+.transform-deg {
+  transform: rotate(180deg);
+}
+
+#header-fixed {
+  position: fixed;
+  top: var(--navbar-height);
+  background-color: white;
+  margin: 0;
+}

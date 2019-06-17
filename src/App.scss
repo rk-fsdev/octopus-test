@@ -1,0 +1,14 @@
+.App {
+  //   width: var(--window-width);
+  height: 100%;
+  position: relative;
+
+  padding-right: 20px;
+  .navbar.ui.divider {
+    margin-top: 0px;
+    position: fixed;
+    top: var(--navbar-height);
+    left: auto;
+    z-index: 3;
+  }
+}
