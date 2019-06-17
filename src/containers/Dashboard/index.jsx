@@ -11,7 +11,7 @@ import './Dashboard.scss';
 
 class Dashboard extends Component {
   state = {
-        isHeaderClicked: 'false',
+    isHeaderClicked: 'false',
     selectedHeader: '',
     isTop: false,
     items: Array.from({ length: loadingLength }),
